@@ -1,0 +1,75 @@
+*{
+    margin: 0;padding: 0;
+}
+body{
+    background-color: rgb(39, 39, 39);
+}
+ul{
+    list-style: none;
+}
+.clockUnder{
+    margin: 200px auto;width: 250px;height: 250px;background-color: rgb(223, 223, 223);
+    box-sizing: border-box;position: relative;border-radius: 57px;box-shadow: 0 0 2px rgb(228, 228, 228);
+}
+.clockUnder .clockMid{
+    width: 206px;height: 206px;box-sizing: border-box;
+    position: absolute;top: 22px;left: 22px;border-radius: 50%;box-shadow:  0 0 10px rgba(187, 187, 187, 0.527);
+    background-image: radial-gradient(rgba(255, 255, 255, 0.726) 30%,rgb(223, 223, 223));
+}
+.clockUnder .clockUp{
+    width: 186px;height: 186px;background-color: rgb(221, 221, 221);box-sizing: border-box;
+    position: absolute;top: 10px;left: 10px;border-radius: 50%;border: 3px solid rgb(255, 255, 255);
+    box-shadow: inset 0 0 10px rgb(148, 148, 148);
+}
+.clockUnder .clockScale{
+    width: 156px;height:156px;background-color: rgba(255, 0, 0, 0);position: absolute;box-sizing: border-box;
+    border-radius: 50%;top:12px;left: 12px;
+}
+.clockUnder .clockScale li{
+    height: 6px;width:100%;display: flex;align-items: center;justify-content: space-between;
+    position: absolute;top:75px;background-color: rgba(155, 65, 65, 0);
+}
+.clockUnder .clockScale li span{
+    display: inline-block;width: 4px;height: 1px;background-color: rgb(165, 165, 165);
+}
+.clockUnder .clockScale li:nth-child(5n+1) span{
+    width: 6px;height: 2px;background-color: rgb(133, 133, 133);
+}
+.clockUnder .clockPointer{
+    width: inherit;height: inherit;
+}
+.clockUnder .clockPointer .clockAlarm{
+    height: 4px;width: 26%;position: absolute;background-color: rgb(124, 124, 124);
+    border-radius: 2px;top:88px;left: 50%;box-shadow: 0 0 2px rgba(122, 122, 122, 0.568);
+    transform: rotate(-90deg);transform-origin: 0 center;
+}
+ .clockUnder .clockPointer .clockHouer{
+    height: 6px;width: 31%;position: absolute;background-color: rgb(51, 51, 51);
+    border-radius: 3px;top:87px;left: 50%;box-shadow: 0 0 2px rgba(46, 46, 46, 0.308);
+    transform: rotate(-90deg);transform-origin : 0 center;
+}
+.clockUnder .clockPointer .clockMinute{
+    height: 4px;width: 38%;position: absolute;background-color: rgb(51, 51, 51);
+    border-radius: 2px;top:88px;left: 50%;box-shadow: 0 0 4px rgba(46, 46, 46, 0.308);
+    transform: rotate(-90deg);transform-origin : 0 center;
+} 
+.clockUnder .clockPointer .clockAxis{
+    position: absolute;width: 22px;height:22px;background-image: radial-gradient(white 40%,rgb(182, 182, 182));
+    border-radius: 50%;top:79px;left: 79px;box-shadow: 0 0 5px rgba(173, 173, 173, 0.644);
+ }
+.clockUnder .clockPointer .clockSecond{
+    width: inherit;height: inherit;display: flex;position: absolute;align-items: center;
+    transform: rotate(-90deg);transform-origin: 90px 90px;
+}
+.clockUnder .clockPointer .clockSecond .one{
+    width: 18px;height: 10px;background-color: red;border-radius: 5px;position:absolute;
+    right: 50%;top: 85px;box-shadow: 0 0 2px rgba(192, 192, 192, 0.521);
+}
+.clockUnder .clockPointer .clockSecond .two{
+    width: 16px;height: 16px;background-color: red;border-radius: 50%;position: absolute;
+    top: 82px;left: 82px;box-shadow: 0 0 2px rgba(192, 192, 192, 0.521);
+}
+.clockUnder .clockPointer .clockSecond .three{
+    width: 40%;height: 1px;background-color: red;position: absolute;
+    top: 89.5px;left: 50%;box-shadow: 0 0 2px rgba(192, 192, 192, 0.521);
+}
